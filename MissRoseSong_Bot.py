@@ -30,7 +30,7 @@ def time_to_seconds(time):
 
 
 @bot.on_message(filters.command(['song']))
-def a(client, message):
+def song(client, message):
     query = ''
     for i in message.command[1:]:
         query += ' ' + str(i)
